@@ -1,7 +1,7 @@
-# Fedora 27-30 on Macbook Pro 14 Upwards
+# Fedora Remix for Macbook Pro 14,1 (based on Fedora version 27-30)
 
 This is a small repo to capture my work in automating the creation of a Fedora
-Installer that doesn't crash on recent Macbook Pro releases.
+*Remix* Installer that doesn't crash on recent Macbook Pro releases.
 
 It creates a Fedora *Remix* ISO that talks, walks and kicks ass like the
 original, without branding or affiliation with Fedora (beyond being a Remix).
@@ -46,7 +46,7 @@ Units: sectors of 1 * 4096 = 4096 bytes
 Sector size (logical/physical): 4096 bytes / 4096 bytes
 I/O size (minimum/optimal): 4096 bytes / 4096 bytes
 Disklabel type: gpt
-Disk identifier: F32B08E9-F346-481E-BFE9-BC166B1C7917
+Disk identifier: redacted
 
 Device            Start      End  Sectors   Size Type
 /dev/nvme0n1p1        6    76805    76800   300M EFI System
@@ -60,7 +60,10 @@ Device            Start      End  Sectors   Size Type
 [root@sage ~]# 
 ```
 
-## APFS
+## APFS Fuse
+
+Mount recent MacOS encrypted volumes with apfs-fuse:
+https://github.com/sgan81/apfs-fuse
 
 `yum install apfs-fuse`
 

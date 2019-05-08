@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# This script will build a Live Fedora 27 Workstation ISO image that will
-# boot on a MacbookPro14,1
+# This script will build a Live Fedora 30 Remix (based on the Workstation version)
+# that boot on a MacbookPro14,1
+#
 #
 # It uses some kickstart files, some patches, drivers, the rawhide kernel and
 # a few other tricks.
